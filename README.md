@@ -9,6 +9,7 @@ Model-based Machine Learning: Biopotential Modeling and Synthetic ECG Generation
 
 # Question Answered
 **Question set 4** were selected. (Biopotential Modeling and Synthetic ECG Generation)
+[For checking the Full results please check] (Hassannia_BMI500HW11.pdf)
 
 ---
 
