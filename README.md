@@ -27,6 +27,12 @@ For full details, figures, and complete analysis, please refer to the accompanyi
 - Phase-plane trajectories (outward spirals, closed ellipses, inward spirals) validate the theoretical stability predictions.
 - **Extra:** Energy analysis shows exponential growth, conservation, or decay depending on α.
 
+
+
+
+
+
+
 ## Self-Regulating Nonlinear Dynamics in the Van der Pol Oscillator (Part A)
 - Nonlinear damping yields **stable limit-cycle oscillations**, controlling amplitude regardless of initial conditions.
 - Increasing α moves behavior from sinusoidal → nonlinear → relaxation oscillations resembling action potentials.
@@ -34,19 +40,17 @@ For full details, figures, and complete analysis, please refer to the accompanyi
 - Phase-plane changes demonstrate the transition from linear to highly nonlinear dynamics.
 - **Extra:**: while the question asks for varying alpha, the variation of other parameter explored.
 
-
-### Merged A1
-![Merged A1](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged_a1.png)
-
+![Result A2](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20a2.png)
 
 
 ## FitzHugh–Nagumo vs Van der Pol (Part B)
 - The FitzHugh–Nagumo model captures **fast–slow membrane dynamics**, excitability thresholds, and refractory periods.
 - Increasing ε reduces time-scale separation, smoothing oscillations; varying I shifts behavior between quiescence and repetitive firing.
 - The Van der Pol oscillator is simpler and produces similar relaxation oscillations, but FHN provides clearer physiological interpretation.
-- - **Extra:**: while the question didnt ask for parameter variation variation of different parameters have been explored. for example it was explored that we should have at least I > I _threshold for firing.  
+- - **Extra:**: while the question didnt ask for parameter variation variation of different parameters have been explored. for example it was explored that we should have at least I > I _threshold for firing.
+![Result A3](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20a3.png)
 
-## Synthetic ECG Modeling with McSharry–Clifford Model (Part C)
+## Synthetic ECG Modeling with McSharry–Clifford Model (Part B)
 - The model produces physiologically realistic **P–QRS–T morphology** via limit-cycle oscillation and Gaussian shaping.
 - Phase portraits (x–z, y–z, z–ż) show stable periodic loops representing cardiac cycles.
 - **Extra:**: trajectories based on the paper has been explored.  
@@ -54,6 +58,7 @@ For full details, figures, and complete analysis, please refer to the accompanyi
 - Parameters **aᵢ** (amplitude) and **bᵢ** (width) modify morphology, enabling simulation of normal or pathological ECGs.
 - - **Extra:**: the variable for all the components have been applied so that we proved the control on all the components while the question just ask for the effect of a and b.
 - Heart-rate variability via ω(t) modulation creates realistic RR-interval fluctuations.
+  ![result B](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20b.png)
 
 ## Stochastic Multichannel ECG Modeling & Clinical Realism (Part C)
 - Stochastic VCG modeling introduces beat-to-beat variability and adds realistic noise sources:  
@@ -64,6 +69,7 @@ For full details, figures, and complete analysis, please refer to the accompanyi
   - signal-processing development  
   - machine-learning model training
 - Stochastic modeling bridges idealized synthetic data with real-world clinical signals.
+![Result C](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/sample%20c.png)
 
 ---
 
