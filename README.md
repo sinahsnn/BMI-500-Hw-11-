@@ -16,7 +16,7 @@ For full details, figures, and complete analysis, please refer to the accompanyi
 
 ---
 
-# Key Insights
+# Key Insights and performance results
 
 ## Action Potential Dynamics & Oscillator Behavior (Part A)
 - The second-order linear oscillator exhibits three regimes depending on damping parameter α:  
