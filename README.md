@@ -32,7 +32,13 @@ For full details, figures, and complete analysis, please refer to the accompanyi
 - Increasing α moves behavior from sinusoidal → nonlinear → relaxation oscillations resembling action potentials.
 - ω₀ scales oscillation frequency but not amplitude.
 - Phase-plane changes demonstrate the transition from linear to highly nonlinear dynamics.
-- **Extra:**: while the question asks for varying alpha, the variation of other parameter explored. 
+- **Extra:**: while the question asks for varying alpha, the variation of other parameter explored.
+
+
+### Merged A1
+![Merged A1](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged_a1.png)
+
+
 
 ## FitzHugh–Nagumo vs Van der Pol (Part B)
 - The FitzHugh–Nagumo model captures **fast–slow membrane dynamics**, excitability thresholds, and refractory periods.
