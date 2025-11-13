@@ -49,6 +49,7 @@ As an extra bonus, all the codes are modular and function based.
 - The Van der Pol oscillator is simpler and produces similar relaxation oscillations, but FHN provides clearer physiological interpretation.
 - - **Extra:**: while the question didnt ask for parameter variation variation of different parameters have been explored. for example it was explored that we should have at least I > I _threshold for firing.
 ![Result A3](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20a3.png)
+while it is tring to control over the controling parameters but it is still simple in comparison to Hodgkin–Huxley model
 
 ## Synthetic ECG Modeling with McSharry–Clifford Model (Part 2)
 - The model produces physiologically realistic **P–QRS–T morphology** via limit-cycle oscillation and Gaussian shaping.
@@ -74,7 +75,7 @@ bi     = [0.25 0.1 0.1 0.1 0.4];   % Gaussian widths
 - - **Extra:**: the variable for all the components have been applied so that we proved the control on all the components while the question just ask for the effect of a and b.
 - Heart-rate variability via ω(t) modulation creates realistic RR-interval fluctuations.
   ![result B](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20b.png)
-
+the limitation is that it is not applicable for multichannel. 
 ## Stochastic Multichannel ECG Modeling & Clinical Realism (Part 3)
 - Stochastic VCG modeling introduces beat-to-beat variability and adds realistic noise sources:  
   **baseline wander**, **EMG muscle artifact**, and **Gaussian sensor noise**.  
@@ -85,8 +86,7 @@ bi     = [0.25 0.1 0.1 0.1 0.4];   % Gaussian widths
   - machine-learning model training
 - Stochastic modeling bridges idealized synthetic data with real-world clinical signals.
 ![Result C](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/sample%20c.png)
-
----
+we can ue also data driven approach for specific patients that we can not model that simply.
 
 # Relevance to Model-Based Machine Learning
 
