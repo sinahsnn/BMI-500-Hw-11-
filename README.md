@@ -16,7 +16,7 @@ As an extra bonus, all the codes are modular and function based.
 
 ---
 
-# Key Insights and performance results
+# Key Insights and performance results ( For Detailed Results and more plot refer to the report)
 
 ## Action Potential Dynamics & Oscillator Behavior (Part A)
 - The second-order linear oscillator exhibits three regimes depending on damping parameter α:  
