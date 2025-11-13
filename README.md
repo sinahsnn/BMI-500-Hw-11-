@@ -18,7 +18,7 @@ As an extra bonus, all the codes are modular and function based.
 
 # Key Insights and performance results ( For Detailed Results and more plot refer to the report)
 
-## Action Potential Dynamics & Oscillator Behavior (Part A)
+## Action Potential Dynamics & Oscillator Behavior (Part 1.A)
 - The second-order linear oscillator exhibits three regimes depending on damping parameter α:  
   **α < 0 → unstable diverging oscillations**,  
   **α = 0 →  Pure oscillatory behavior**,  
@@ -33,7 +33,7 @@ As an extra bonus, all the codes are modular and function based.
 
 
 
-## Self-Regulating Nonlinear Dynamics in the Van der Pol Oscillator (Part A)
+## Self-Regulating Nonlinear Dynamics in the Van der Pol Oscillator (Part 1.B)
 - Nonlinear damping yields **stable limit-cycle oscillations**, controlling amplitude regardless of initial conditions.
 - Increasing α moves behavior from sinusoidal → nonlinear → relaxation oscillations resembling action potentials.
 - ω₀ scales oscillation frequency but not amplitude.
@@ -43,24 +43,39 @@ As an extra bonus, all the codes are modular and function based.
 ![Result A2](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20a2.png)
 
 
-## FitzHugh–Nagumo vs Van der Pol (Part B)
+## FitzHugh–Nagumo vs Van der Pol (Part 1.C)
 - The FitzHugh–Nagumo model captures **fast–slow membrane dynamics**, excitability thresholds, and refractory periods.
 - Increasing ε reduces time-scale separation, smoothing oscillations; varying I shifts behavior between quiescence and repetitive firing.
 - The Van der Pol oscillator is simpler and produces similar relaxation oscillations, but FHN provides clearer physiological interpretation.
 - - **Extra:**: while the question didnt ask for parameter variation variation of different parameters have been explored. for example it was explored that we should have at least I > I _threshold for firing.
 ![Result A3](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20a3.png)
 
-## Synthetic ECG Modeling with McSharry–Clifford Model (Part B)
+## Synthetic ECG Modeling with McSharry–Clifford Model (Part 2)
 - The model produces physiologically realistic **P–QRS–T morphology** via limit-cycle oscillation and Gaussian shaping.
 - Phase portraits (x–z, y–z, z–ż) show stable periodic loops representing cardiac cycles.
-- **Extra:**: trajectories based on the paper has been explored.  
+- **Extra:**: trajectories based on the paper has been explored.
+- % ---------- Parameters (paper-aligned) ----------
+mode_w   = 1;        % 1 = classic such as the paper  2 = my own version of the code (sinusoidal HRV (extension))
+sfecg    = 256;      % output sampling rate (Hz)
+N        = 256;      % ~number of beats
+Anoise   = 0;        % mV noise
+hrmean   = 60;       % bpm
+hrstd    = 1;        % bpm (STD of HR)  -> drives RR variance
+lfhfratio = 0.5;     % LF/HF power ratio (paper examples)
+sfint    = 512;      % internal integration rate (Hz)
+
+% PQRST morphology
+ti_deg = [-70 -15 0 15 100];       % degrees, P Q R S T angles (relative to R)
+ai     = [1.2 -5 30 -7.5 0.75];    % z "heights" (+/-)
+bi     = [0.25 0.1 0.1 0.1 0.4];   % Gaussian widths
+
 
 - Parameters **aᵢ** (amplitude) and **bᵢ** (width) modify morphology, enabling simulation of normal or pathological ECGs.
 - - **Extra:**: the variable for all the components have been applied so that we proved the control on all the components while the question just ask for the effect of a and b.
 - Heart-rate variability via ω(t) modulation creates realistic RR-interval fluctuations.
   ![result B](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged%20b.png)
 
-## Stochastic Multichannel ECG Modeling & Clinical Realism (Part C)
+## Stochastic Multichannel ECG Modeling & Clinical Realism (Part 3)
 - Stochastic VCG modeling introduces beat-to-beat variability and adds realistic noise sources:  
   **baseline wander**, **EMG muscle artifact**, and **Gaussian sensor noise**.  
 - Noise processes mimic physiological and instrumentation disturbances seen in clinical ECGs.
