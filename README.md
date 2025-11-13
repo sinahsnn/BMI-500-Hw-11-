@@ -27,7 +27,7 @@ For full details, figures, and complete analysis, please refer to the accompanyi
 - Phase-plane trajectories (outward spirals, closed ellipses, inward spirals) validate the theoretical stability predictions.
 - **Extra:** Energy analysis shows exponential growth, conservation, or decay depending on α.
 
-
+![Result A1](https://raw.githubusercontent.com/sinahsnn/BMI-500-Hw-11-/main/final_results/merged_a1.png)
 
 
 
